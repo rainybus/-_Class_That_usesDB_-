@@ -96,7 +96,7 @@ using namespace std;
     }
 
 
-    TEST_F(SomeTest, test1)        //¬ä¬Ö¬ã¬ä "¬ß¬Ñ ¬à¬ä¬Ü¬â¬í¬ä¬Ú¬Ö" ¬ã¬à¬Ö¬Õ¬Ú¬ß¬Ö¬ß¬Ú¬ñ //  ¬Ü¬à¬â ¬Ó¬Ñ¬â¬Ú¬Ñ¬ß¬ä : Á¢¼Ó ¿­±â Å×½ºÆ® (Å×½ºÆ® : ¬Ü¬à¬ß¬Ô¬İ¬Ú¬ê ¬à¬ä test(¬Ñ¬ß¬Ô¬İ.))
+    TEST_F(SomeTest, test1)        //Ñ‚ĞµÑÑ‚ "Ğ½Ğ° Ğ¾Ñ‚ĞºÑ€Ñ‹Ñ‚Ğ¸Ğµ" ÑĞ¾ĞµĞ´Ğ¸Ğ½ĞµĞ½Ğ¸Ñ //  ĞºĞ¾Ñ€ Ğ²Ğ°Ñ€Ğ¸Ğ°Ğ½Ñ‚ : ì ‘ì† ì—´ê¸° í…ŒìŠ¤íŠ¸ (í…ŒìŠ¤íŠ¸ : ĞºĞ¾Ğ½Ğ³Ğ»Ğ¸Ñˆ/konglish Ğ¾Ñ‚ test(Ğ°Ğ½Ğ³Ğ».))
     {
         bool test = dbconn->openConnection();
         bool reference(true);
@@ -110,7 +110,7 @@ using namespace std;
         ASSERT_EQ(test, reference);
     }
 
-    TEST_F(SomeTest, test3)        //¬ä¬Ö¬ã¬ä ¬Ù¬Ñ¬á¬â¬à¬ã¬à¬Ó // Äõ¸® (¬Ü¬à¬ß¬Ô¬İ¬Ú¬ê ¬à¬ä query(¬Ñ¬ß¬Ô¬İ.)) Å×½ºÆ®
+    TEST_F(SomeTest, test3)        //Ñ‚ĞµÑÑ‚ Ğ·Ğ°Ğ¿Ñ€Ğ¾ÑĞ¾Ğ² // ì¿¼ë¦¬ (ĞºĞ¾Ğ½Ğ³Ğ»Ğ¸Ñˆ Ğ¾Ñ‚ query(Ğ°Ğ½Ğ³Ğ».)) í…ŒìŠ¤íŠ¸
     {
         dbconn->openConnection();
         bool test = dbconn->useConnection("123");
@@ -118,7 +118,7 @@ using namespace std;
         ASSERT_EQ(test, reference);
     }
 
-    TEST_F(SomeTest, test4)        //¬ä¬Ö¬ã¬ä ¬á¬à¬Ó¬ä¬à¬â¬ß¬à¬Ô¬à ¬à¬ä¬Ü¬â¬í¬ä¬Ú¬ñ // ´Ù½Ã ¿­±â¿¡ °üÇÑ Å×½ºÆ®
+    TEST_F(SomeTest, test4)        //Ñ‚ĞµÑÑ‚ Ğ¿Ğ¾Ğ²Ñ‚Ğ¾Ñ€Ğ½Ğ¾Ğ³Ğ¾ Ğ¾Ñ‚ĞºÑ€Ñ‹Ñ‚Ğ¸Ñ // ë‹¤ì‹œ ì—´ê¸°ì— ê´€í•œ í…ŒìŠ¤íŠ¸
     {
         dbconn->openConnection();
         bool test = dbconn->openConnection();
@@ -126,25 +126,25 @@ using namespace std;
         ASSERT_EQ(test, reference);
     }
 
-    TEST_F(SomeTest, test5)        //¬ä¬Ö¬ã¬ä ¬ß¬Ñ ¬à¬Ò¬Ş¬Ö¬ß ¬ã ¬Ú¬ã¬á¬à¬İ¬î¬Ù¬à¬Ó¬Ñ¬ß¬Ú¬Ö¬Ş ¬Ş¬à¬Ü-¬à¬Ò¬ì¬Ö¬Ü¬ä¬à¬Ó // 'mock'ÀÌ¶õ °³Ã¼¸¦ »ç¿ëÇÑ ±³È¯ Å×½ºÆ®
+    TEST_F(SomeTest, test5)        //Ñ‚ĞµÑÑ‚ Ğ½Ğ° Ğ¾Ğ±Ğ¼ĞµĞ½ Ñ Ğ¸ÑĞ¿Ğ¾Ğ»ÑŒĞ·Ğ¾Ğ²Ğ°Ğ½Ğ¸ĞµĞ¼ Ğ¼Ğ¾Ğº-Ğ¾Ğ±ÑŠĞµĞºÑ‚Ğ¾Ğ² // 'mock'ì´ë€ ê°œì²´ë¥¼ ì‚¬ìš©í•œ êµí™˜ í…ŒìŠ¤íŠ¸
     {
 
-        //¬ã¬à¬Ù¬Õ¬Ñ¬ß¬Ú¬Ö ¬Ş¬à¬Ü-¬à¬Ò¬ì¬Ö¬Ü¬ä¬Ñ //'mock'ÀÌ¶õ °³Ã¼ Ã¢Á¶
+        //ÑĞ¾Ğ·Ğ´Ğ°Ğ½Ğ¸Ğµ Ğ¼Ğ¾Ğº-Ğ¾Ğ±ÑŠĞµĞºÑ‚Ğ° //'mock'ì´ë€ ê°œì²´ ì°½ì¡°
         MockDBconnection mdbc;
 
-        //¬Ù¬Ñ¬á¬Ú¬ã¬í¬Ó¬Ñ¬Ö¬Ş ¬à¬Ø¬Ú¬Õ¬Ñ¬ß¬Ú¬ñ // ±â´ëÇÔÀ» ÀÛ¼º
+        //Ğ·Ğ°Ğ¿Ğ¸ÑÑ‹Ğ²Ğ°ĞµĞ¼ Ğ¾Ğ¶Ğ¸Ğ´Ğ°Ğ½Ğ¸Ñ // ê¸°ëŒ€í•¨ì„ ì‘ì„±
         EXPECT_CALL(mdbc, open).WillOnce(::testing::Return(true));
         //EXPECT_CALL(mdbc, open).WillOnce(::testing::Return(false));
 
         EXPECT_CALL(mdbc, execQuery("123")).WillOnce(::testing::Return(true));
 
 
-        //¬Ù¬Ñ¬á¬å¬ã¬Ü ¬à¬Ò¬â¬Ñ¬Ò¬à¬ä¬Ü¬Ú ¬Ñ¬İ¬Ô¬à¬â¬Ú¬ä¬Ş¬Ñ // ¾Ë°í¸®ÁòÀÇ Ã³¸® ½ÇÇà
+        //Ğ·Ğ°Ğ¿ÑƒÑĞº Ğ¾Ğ±Ñ€Ğ°Ğ±Ğ¾Ñ‚ĞºĞ¸ Ğ°Ğ»Ğ³Ğ¾Ñ€Ğ¸Ñ‚Ğ¼Ğ° // ì•Œê³ ë¦¬ì¦˜ì˜ ì²˜ë¦¬ ì‹¤í–‰
         ClassThatUsesDB CTUDB(&mdbc);
         bool result1 = CTUDB.openConnection();
         bool result2 = CTUDB.useConnection("123");
 
-        //¬ã¬â¬Ñ¬Ó¬ß¬Ö¬ß¬Ú¬Ö ¬â¬Ö¬Ù¬å¬İ¬î¬ä¬Ñ¬ä¬Ñ ¬ã ¬â¬Ö¬æ¬Ö¬â¬Ö¬ß¬ã¬à¬Ş  // ÂüÁ¶¿Í °á°ú ºñ±³
+        //ÑÑ€Ğ°Ğ²Ğ½ĞµĞ½Ğ¸Ğµ Ñ€ĞµĞ·ÑƒĞ»ÑŒÑ‚Ğ°Ñ‚Ğ° Ñ Ñ€ĞµÑ„ĞµÑ€ĞµĞ½ÑĞ¾Ğ¼  // ì°¸ì¡°ì™€ ê²°ê³¼ ë¹„êµ
         ASSERT_EQ(true, result1);
         ASSERT_EQ(true, result2);
     }
@@ -155,3 +155,4 @@ using namespace std;
         ::testing::InitGoogleTest(&argc, argv);
         return RUN_ALL_TESTS();
     }
+
