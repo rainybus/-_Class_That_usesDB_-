@@ -2,7 +2,6 @@
 #include <gmock/gmock.h>
 
 
-
 class iDBconnection
 {
 public:
@@ -74,3 +73,4 @@ protected:
     iDBconnection* idbconn;
     ClassThatUsesDB* dbconn;
 };
+
