@@ -1,7 +1,7 @@
 #include "test.h"
 #include <iostream>
-
 using namespace std;
+
 
     DBconnection::DBconnection()
     {
@@ -155,4 +155,5 @@ using namespace std;
         ::testing::InitGoogleTest(&argc, argv);
         return RUN_ALL_TESTS();
     }
+
 
